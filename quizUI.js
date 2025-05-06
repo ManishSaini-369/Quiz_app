@@ -71,7 +71,7 @@ export class QuizUI {
           const selected = btn.textContent;
           const correct = this.manager.getCurrentQuestion().answer;
     
-          // // Check if selected answer is correct
+          // // Check if selected answer is correct at the time so submiting each answer you can uncomment this below code
           // if (selected === correct) {
           //   btn.style.backgroundColor = "lightgreen"; // green tick
           //   btn.innerHTML += " ✅";
@@ -135,27 +135,5 @@ export class QuizUI {
       `;
     }
     
-  
-    // showSummary() {
-    //   const { score, questions, bookmarked, userAnswers } = this.manager;
-    //   this.container.innerHTML = `
-    //     <h2>Quiz Completed!</h2>
-    //     <p>Your Score: ${score} / ${questions.length}</p>
-    //     <h3>Bookmarked Questions:</h3>
-    //     <ul>
-    //       ${bookmarked.map(id => `<li>Question ID: ${id}</li>`).join("")}
-    //     </ul>
-    //     <h3>Review:</h3>
-    //     <ol>
-    //       ${questions.map(q => `
-    //         <li class="each-review">
-    //           <strong>${q.question}</strong><br/>
-    //           Your Answer: <strong>${userAnswers.get(q.id) || "Unanswered"}</strong><br/>
-    //           Correct Answer: <strong>${q.answer}</strong>
-    //         </li>
-    //       `).join("")}
-    //     </ol>
-    //   `;
-    // }
   }
   
